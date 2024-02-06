@@ -16,6 +16,9 @@ class Movie extends Media{
     }
 
 
+
+    
+    //static method
     static longestMovie(Movies){
         let current = new Movie("", "", "", "", "", "")
        for(let i = 0; i < Movies.length; i++){
@@ -23,7 +26,7 @@ class Movie extends Media{
             current = Movies[i]
         }
        }
-       return temp
+       return current
     }
     
 }
