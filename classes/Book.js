@@ -3,8 +3,8 @@ const Media = require("./Media.js");
 
 // create your Book class:
 class Book extends Media{
-    constructor(title, genre, year, author, numPages, rating){
-        super(title, genre, year);
+    constructor(title, year, genre, author, numPages, rating){
+        super(title, year, genre);
         this.author = author;
         this.numPages = numPages;
         this.rating = rating;
